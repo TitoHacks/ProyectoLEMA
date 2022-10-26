@@ -4,6 +4,10 @@
 <title>Arcadian Prints</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--price bar-->
+<link rel="stylesheet" href="./css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--pricebar end-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -59,12 +63,65 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
   <!-- Top header -->
+  <!-- Script -->
+    <script>
+      function openRightMenu() {
+        document.getElementById("rightMenu").style.display = "block";
+      }
+
+      function closeRightMenu() {
+        document.getElementById("rightMenu").style.display = "none";
+      }
+    </script>
+  <!-- End of Script -->
   <header class="w3-container w3-xlarge">
     <p class="w3-left">Tienda</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none; width: 440px !important; right:0;" id="rightMenu">
+      <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+      <p>Presupuesto</p>
+      <form action="/action_page.php" target="_blank">
+        <param><input class="w3-input w3-border" type="text" placeholder="Nombre" name="Nombre" required style="width: 97%; height: 15px; font-size: 15px; padding: 15px; margin: 5px;"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required style="width: 97%; height: 15px; font-size: 15px; padding: 15px; margin: 5px;"></p>
+        <p style="margin: 5px; font-size: 20px;">Con que material vas a imprimir
+          <div style="font-size: 15px;">
+            <input style="margin: 5px;" type="checkbox" name="aficiones[]" value="Resina"><label class="w3-button">Resina</label>
+            <br>
+            <input style="margin: 5px;" type="checkbox" name="aficiones[]" value="Filamento"><label class="w3-button">Filamento 3D</label>
+          </div>
+        </p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" name="Mensaje" required style="width: 97%; height: 15px; font-size: 15px; padding: 15px; margin: 5px;"></p>
+        <!--PriceBar-->
+        <div class="wrapper">
+          <header>
+            <h2>Price Range</h2>
+            <p>Use slider or enter min and max price</p>
+          </header>
+          <div class="price-input">
+            <div class="field">
+              <span>Min</span>
+              <input type="number" class="input-min" value="160">
+            </div>
+            <div class="separator">-</div>
+            <div class="field">
+              <span>Max</span>
+              <input type="number" class="input-max" value="2000">
+            </div>
+          </div>
+          <div class="slider">
+            <div class="progress"></div>
+          </div>
+          <div class="range-input">
+            <input type="range" class="range-min" min="160" max="2000" value="160" step="100">
+            <input type="range" class="range-max" min="160" max="2000" value="2000" step="100">
+          </div>
+        </div>
+    
+        <script src="./java/script.js"></script>
+        <!--PriceBarEnd-->
+        <button type="submit" class="w3-button w3-block w3-black" style="width: 97%; height: 45px; font-size: 15px; padding: 15px; margin: 5px;">Enviar</button>
+      </form>
+    </div>
+    <button class="w3-button w3-white w3-xlarge w3-right" onclick="openRightMenu()">Forum</button>
   </header>
 
   <!-- Image header -->
