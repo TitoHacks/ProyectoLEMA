@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Arcadian Prints-STL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Aqui se encuentran unas cuantas empresas que te proporcionaran con archivos stl,
+para que los puedas imprimir">
+<!--price bar-->
+<link rel="stylesheet" href="./css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--pricebar end-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>Arcadian Prints</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="#" class="w3-bar-item w3-button">Pasos a seguir</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Tienda <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="./store.html" class="w3-bar-item w3-button w3-black">Mas Vendidos</a>
+      <a href="./fdm.html" class="w3-bar-item w3-button">Impresoras FDM</a>
+      <a href="./resina.html" class="w3-bar-item w3-button">Impresoras de resina</a>
+      <a href="./filamento.html" class="w3-bar-item w3-button">Filamento</a>
+      <a href="./accesorios.html" class="w3-bar-item w3-button">Accesorios</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button">Jackets</a>
+    <a href="#" class="w3-bar-item w3-button">Gymwear</a>
+    <a href="#" class="w3-bar-item w3-button">Blazers</a>
+    <a href="#" class="w3-bar-item w3-button">Shoes</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <div class="w3-display-topleft w3-text-black" style="padding:24px 48px">
+      <h1 class="w3-xxxlarge w3-hide-small">EMPRESAS</h1>
+      <h1 class="w3-hide-large w3-hide-medium">EMPRESAS</h1>
+      <h1 class="w3-xlarge">Modelage 3D</h1>
+    </div>
+  </div>
+
+  <!-- Companies grid -->
+  <div class=" w3-animate-opacity " style="margin-top: 200px; padding-left: 25px;">
+    <!--Loot-->
+    <div class="w3-row">
+      <div class="w3-col m4 ">
+        <a href="https://lootstudios.com/" target="_blank"><img src="./img/lootS.png" style="width:70%" alt="LootStudios Logo"><h2>LootStudios</h2></a>
+  
+        <p>
+          LootStudios es una empresa que tiene un sistema de suscripcion, para que cada mes recivas un paquete de archivos 
+          stl para que tu puedas imprimirlo.
+        </p>
+        <p>
+          Se fundo en 2020 y hasta el dia de hoy siguen proporcionando a sus clientes con miniaturas con una de las mejores calidades 
+          de detalle.
+        </p>
+  
+      </div>
+      <span></span>
+      <div class="w3-col m4 " style="margin-left: 80px;">
+        <p><img src="./img/lootMini.png" style="width:80%" alt="Loot mini"></p>
+      </div>
+    </div>
+    
+    <!--Archvillain--> 
+    <div class="w3-row">
+      <div class="w3-col m4">
+        <p><img src="./img/archMini.png" style="width:110%" alt="Archvillain Mini"></p>
+      </div>
+      <span></span>
+      <div class="w3-col m4 " style="padding-left: 80px;">
+        <a href="https://archvillaingames.com/" target="_blank"><img src="./img/archG.png" style="width:120%" alt="Archvillain Logo"><h2>Archvillain</h2> </a>
+        
+        <p>
+          Archvillain Games un empresa que tiene un sistema de suscripcion mensual, para que recivas un paquete de 40 archivos 
+          stl para que tu puedas imprimirlos en casa.
+        </p>
+
+        <p>
+          Desde 2019 Archvillain Games ha estado proporcionando miniaturas de la mejor calidad a sus clientes.
+        </p>
+      </div>
+
+    </div>
+    <!--MarketBot-->
+
+    <div class="w3-row" style="margin-left: 10px;">
+      
+      <div class="w3-col m4 ">
+        <a href="https://www.thingiverse.com/" target="_blank"><img src="./img/makerB.png" style="width:110%" alt="Markerbot Logo"><h2>Markerbot</h2></a>
+        <span></span>
+        <p>
+          Markerbot Thingiverse es un sitio web donde los usuarios comparten sus modelos 3D para que 
+          se puedan descargar por otros de forma gratuita. Aunque los usuarios tambien pueden donar 
+          a los creadores. 
+        </p>
+      </div>
+      <div class="w3-col m4 " style="padding-left: 80px;">
+        <p><img src="./img/marketBot_cube.png" style="width:110%" alt="Thingiverse Cube"></p>
+      </div>
+    </div>
+    <!--MyMiniFactory-->
+    <div class="w3-row">
+
+      <div class="w3-col m4 ">
+        <p><img src="./img/myminiF_catan.png" style="width:110%" alt="MyMiniFactory catan"></p>
+      </div>
+
+      <div class="w3-col m4 " style="padding-left: 80px;">
+        <a href="https://www.myminifactory.com/es/" target="_blank"><img src="./img/myMiniF.png" style="width:110%" alt="MyMiniFactory Logo"><h2>MyMiniFactory</h2></a>
+        <span></span>
+        <p>
+          Esta plataforma se fundo en 2013 con el objetivo de poder vender diseños digitales a las
+          personas con la aficion de imprimir 3D.
+        </p>
+        <p>
+          Esta pagina ha evolucionado con su comunidad, ahora tambien venden pdf para juegos de mesa y 
+          hay una seccion para que los usuarios enseñen sus impresiones.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <!-- Footer -->
+  <footer class="w3-padding-24 w3-light-grey w3-small w3-center" id="footer" style="width: 110%;">
+    <div class="w3-row-padding">
+      
+
+      <div class="w3-col s4 w3-center" style="width:50%;margin:auto;">
+        <h4>Tienda</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Arcadian Prints</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> arcadianprints@gmail.com</p>
+      </div>
+      <div class="w3-col s4 w3-center" style="width:35%;margin:auto;">
+        <h4>Aceptamos</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Tarjeta de Credito</p>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24" style="width: 110%;">Arcadian Prints &#169;</div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
