@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Arcadian Prints</title>
+<title>Arcadian Prints-About Us</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Aqui se hablara de la creacion de la empresa y de que se trata">
+<!--price bar-->
+<link rel="stylesheet" href="./css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--pricebar end-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -22,16 +27,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h3 class="w3-wide"><b>Arcadian Prints</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">Shirts</a>
-    <a href="#" class="w3-bar-item w3-button">Dresses</a>
+    <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="#" class="w3-bar-item w3-button">Pasos a seguir</a>
     <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      Jeans <i class="fa fa-caret-down"></i>
+      Tienda <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-      <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-      <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-      <a href="#" class="w3-bar-item w3-button">Straight</a>
+      <a href="./store.html" class="w3-bar-item w3-button w3-black">Mas Vendidos</a>
+      <a href="./fdm.html" class="w3-bar-item w3-button">Impresoras FDM</a>
+      <a href="./resina.html" class="w3-bar-item w3-button">Impresoras de resina</a>
+      <a href="./filamento.html" class="w3-bar-item w3-button">Filamento</a>
+      <a href="./accesorios.html" class="w3-bar-item w3-button">Accesorios</a>
     </div>
     <a href="#" class="w3-bar-item w3-button">Jackets</a>
     <a href="#" class="w3-bar-item w3-button">Gymwear</a>
@@ -39,7 +45,6 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <a href="#" class="w3-bar-item w3-button">Shoes</a>
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
   <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
 </nav>
 
@@ -57,135 +62,61 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">Jeans</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
-  </header>
 
   <!-- Image header -->
   <div class="w3-display-container w3-container">
-    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
-    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
-      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-      <h1 class="w3-hide-small">COLLECTION 2016</h1>
-      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+    <img src="./img/inicio_banner.jpg" class="w3-hide-small" alt="Banner Arcadian" width="100%">
+    <div class="w3-display-topleft w3-text-black" style="padding:24px 48px">
+      <h1 class="w3-xxxlarge w3-hide-small imageheader" style="margin-left:20%; float: right;">ABOUT ARCADIAN PRINTS</h1>
+      <h1 class="w3-hide-large w3-hide-medium">ABOUT ARCADIAN PRINTS</h1>
     </div>
   </div>
 
-  <div class="w3-container w3-text-grey" id="jeans">
-    <p>8 items</p>
-  </div>
-
-  <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="/w3images/jeans2.jpg" style="width:100%">
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/w3images/jeans2.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">New</span>
-          <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
+  <!-- ABOUT US -->
+  
+  <div class="w3-row" style=" margin-bottom: 25px; padding-left: 25px;">
+        <div class="w3-col" style="width: 60%;">
+            <p>
+                Arcadian fue fundada en el año 2022, por Guillermo Orive y Jon Ander Elorza, unos estudiantes de 
+                grado superior de Desarrollo Web. El objetivo fue poder proporcionar a sus clientes con las 
+                herramientas y materiales necesarios para comenzar su nuevo hobby de impresion 3D o para 
+                mejorarlo, ya sea con resina o filamento FTM.
+            </p>
+            <p>   
+                Y eso han conseguido, hasta el día de hoy han estado colaborando con empresas que vendian 
+                impresoras 3D y los materiales de impresion que necesitaban, al igual que con empresas que 
+                proporcionaban modelos 3D faciles de imprimir.
+            </p>
         </div>
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="/w3images/jeans3.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-      </div>
-    </div>
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans3.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/w3images/jeans4.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">Sale</span>
-          <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
+        <div class="w3-col" style="width: 30%; margin-left: 15px;">
+            <img src="./img/resign_print.png" width="100%" alt="Resign Print">
         </div>
-        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
-      </div>
-    </div>
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans4.jpg" style="width:100%">
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="/w3images/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
-    </div>
-  </div>
+        <div class="w3-row" style="margin-top: 50px;">
+            <h3>Empresas Colaboradoras</h3>
+            <img src="./img/empresas.png" style="margin-left: 15%;" width="70%" alt="Empresas Colaboradoras">
+        </div>
 
-  <!-- Subscribe section -->
-  <div class="w3-container w3-black w3-padding-32">
-    <h1>Subscribe</h1>
-    <p>To get special offers and VIP treatment:</p>
-    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
-  </div>
+    </div>
+  
+  
   
   <!-- Footer -->
-  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+  <footer class="w3-padding-24 w3-light-grey w3-small w3-center" id="footer" style="width: 110%;">
     <div class="w3-row-padding">
-      <div class="w3-col s4">
-        <h4>Contact</h4>
-        <p>Questions? Go ahead.</p>
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
-          <button type="submit" class="w3-button w3-block w3-black">Send</button>
-        </form>
-      </div>
+      
 
-      <div class="w3-col s4">
-        <h4>About</h4>
-        <p><a href="#">About us</a></p>
-        <p><a href="#">We're hiring</a></p>
-        <p><a href="#">Support</a></p>
-        <p><a href="#">Find store</a></p>
-        <p><a href="#">Shipment</a></p>
-        <p><a href="#">Payment</a></p>
-        <p><a href="#">Gift card</a></p>
-        <p><a href="#">Return</a></p>
-        <p><a href="#">Help</a></p>
-      </div>
-
-      <div class="w3-col s4 w3-justify">
-        <h4>Store</h4>
-        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+      <div class="w3-col s4 w3-center" style="width:50%;margin:auto;">
+        <h4>Tienda</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Arcadian Prints</p>
         <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
-        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
-        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-envelope"></i> arcadianprints@gmail.com</p>
+      </div>
+      <div class="w3-col s4 w3-center" style="width:35%;margin:auto;">
+        <h4>Aceptamos</h4>
         <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
-        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
-        <br>
+        <p><i class="fa fa-fw fa-credit-card"></i> Tarjeta de Credito</p>
         <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
         <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
         <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
@@ -196,7 +127,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </div>
   </footer>
 
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-black w3-center w3-padding-24" style="width: 110%;">Arcadian Prints &#169;</div>
 
   <!-- End page content -->
 </div>
